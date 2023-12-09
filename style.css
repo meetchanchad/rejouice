@@ -81,10 +81,24 @@
 
 .pageOne-content span{
     font-family: rejouice;
+    display: inline-block;
 }
 
-#pageTwo {
-    height: 100vh;
+#loader {
+    height: 100%;
     width: 100%;
-    background-color: #000;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    color: #fff;
+    z-index: 1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+#loader h3{
+    font-size: 1.7vw;
+    font-weight: 100;
 }
