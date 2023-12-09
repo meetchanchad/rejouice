@@ -15,7 +15,7 @@
     font-family: nb;
 }
 
-.pageOne{
+#pageOne{
     height: 100vh;
     width: 100%;
 }
@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(-50%,-50%);
 }
 
 #cursor h5{
@@ -37,7 +38,7 @@
     font-weight: 100;
 }
 
-.pageOne video {
+#pageOne video {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -80,4 +81,10 @@
 
 .pageOne-content span{
     font-family: rejouice;
+}
+
+#pageTwo {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
 }
