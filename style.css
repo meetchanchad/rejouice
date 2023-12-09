@@ -1,5 +1,83 @@
+@font-face {
+    font-family: nb;
+    src: url(./assets/NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejouice;
+    src: url(./assets/Rejouice-Headline.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: nb;
+}
+
+.pageOne{
+    height: 100vh;
+    width: 100%;
+}
+
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #ff5f38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor h5{
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+
+.pageOne video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pageOne-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageOne-content nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3vw;
+}
+
+.pageOne-content nav h3,
+.pageOne-content nav h4
+{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.pageOne-content h1{
+    font-family: rejouice;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 20vw;
+}
+
+.pageOne-content span{
+    font-family: rejouice;
 }
